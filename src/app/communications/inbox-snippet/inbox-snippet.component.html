@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-lg-2 text-center">
+    <div class="category" [ngClass]="message.favoriteFruit"></div>
+  </div>
+  <div class="col-lg-2 text-center"><img src="/assets/images/{{message.picture}}" height="45" class="rounded-image email-image"/></div>
+  <div class="col-lg-8">
+    <h6><a href="javascript:void()" (click)="isModalVisible = true">{{message.name}}</a></h6>
+    <div>{{message.subject}}</div>
+  </div>
+</div>
+<clr-modal [(clrModalOpen)]="isModalVisible" [clrModalSize]="'lg'">
+  <h3 class="modal-title">You have a meeting today with Client X-Men: Cyclops</h3>
+  <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare pharetra massa laoreet accumsan. Praesent dolor turpis, facilisis vel justo at, dignissim aliquet dolor. Nullam aliquam velit auctor ipsum facilisis dictum. Aliquam lacinia leo eget tellus congue laoreet. Nullam condimentum blandit nulla, sed hendrerit velit euismod quis. Donec malesuada risus nec maximus sagittis. Pellentesque gravida nibh sit amet orci laoreet sollicitudin. Cras id finibus augue. Mauris tempus pretium massa ac fringilla. Sed ut est vitae purus eleifend iaculis elementum vehicula mauris.</p>
+
+      <p>Morbi at accumsan leo, sit amet volutpat ligula. Quisque sed mi neque. Phasellus maximus egestas enim. Curabitur euismod at lorem eget posuere. Maecenas tristique semper tincidunt. Pellentesque finibus, nulla eget rhoncus varius, sem enim venenatis ex, eget dapibus quam arcu sit amet est. Quisque viverra iaculis nulla, nec aliquet ante pharetra ac. Proin varius massa purus, vel dapibus velit aliquam et. Morbi aliquet nunc a dui semper commodo. Etiam vel venenatis nulla. Ut urna sapien, tristique sed orci vel, lacinia condimentum elit. In hac habitasse platea dictumst.</p>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-outline" (click)="isModalVisible = false">Close</button>
+      <a href="/communications" class="btn btn-primary">Reply</a>
+  </div>
+</clr-modal>

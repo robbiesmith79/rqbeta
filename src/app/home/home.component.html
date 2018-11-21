@@ -1,0 +1,119 @@
+<h1>Good Evening, Randy</h1>
+
+<div class="clr-row">
+    <div class="clr-col-sm-12 clr-col-md-4">
+        <div class="card">
+          <div class="card-header">
+              Inbox (3 Unread Messages)
+          </div>
+          <div class="card-block">
+              <div class="card-text">
+                  <app-inbox-snippet></app-inbox-snippet>
+                  <app-inbox-snippet></app-inbox-snippet>
+                  <app-inbox-snippet></app-inbox-snippet>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="clr-col-sm-12 clr-col-md-4">
+        <div class="card">
+          <div class="card-header">
+              Sales Quota
+          </div>
+          <div class="card-block">
+              <div class="card-text">
+                  <div class="row">
+                      <div class="col-lg-6">
+                        <h5>Goal: $250,000</h5>
+                        <app-guage></app-guage>
+                      </div>
+                      <div class="col-lg-6">
+                        <h5>Month-to-Date</h5>
+                        <div class="sales-quota">$0.00</div>
+                        <h5>Year-to-Date</h5>
+                        <div class="sales-quota">$190,000</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="clr-col-sm-12 clr-col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Calendar
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <mwl-demo-component></mwl-demo-component>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="clr-col-sm-12 clr-col-md-4">
+        <div class="card">
+          <div class="card-header">
+              <div class="row">
+                <div class="col-lg-2">
+                    <div>
+                        <img src="/assets/images/sample2.jpg" class="chat-profile-image" />
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <h5>Team Chat</h5>
+                    <div class="chat-company-name">Company Name</div>
+                </div>
+              </div>
+          </div>
+          <div class="card-block">
+              <div class="card-text">
+                  <div class="message">
+                      <div class="chat-name">John: 10:23am</div>
+                      What is a CMA report?
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="message me">
+                      <div class="chat-name">Gail: 10:25am</div>
+                      Hey John, you can find an example in the file cabinet. When is our meeting today?
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="message">
+                     <div class="chat-name">John: 10:25am</div>
+                      Which filing cabinet? 3:00pm.
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+          </div>
+          <div class="card-footer">
+              <textarea rows="2" cols="50" width="100%" onfocus="this.value=''">Type your message here...</textarea>
+              <div class="text-right">
+                  <input type="button" class="btn btn-success" value="Send" style="margin-right:0px"/>
+              </div> 
+          </div>
+        </div>
+    </div>
+    <div class="clr-col-sm-12 clr-col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Monthly Commission Earned (In thousands)
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    <div>
+                        <div style="display: block">
+                          <canvas baseChart
+                                  [datasets]="barChartData"
+                                  [labels]="barChartLabels"
+                                  [options]="barChartOptions"
+                                  [legend]="barChartLegend"
+                                  [chartType]="barChartType"
+                                  (chartHover)="chartHovered($event)"
+                                  (chartClick)="chartClicked($event)"></canvas>
+                        </div>
+                        <button (click)="randomize()">Update</button>
+                      </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>

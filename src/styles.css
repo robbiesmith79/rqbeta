@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+
+/* main-container */
+.main-container {
+    background-color: #F0F0F7;
+}
+
+.main-container .content-container .content-area {
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    .main-container .header .branding {
+        min-width: 10rem;
+        max-width: 10rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container .header .branding {
+        min-width: 10rem;
+        max-width: 10rem;
+    }
+}
+
+/* header */
+.header {
+    background-color:#00A643;
+}
+.header .branding, header .branding {
+    min-width: 10rem;
+}
+
+/* side nav */
+.clr-vertical-nav {
+    background-color:#00B94B;
+}
+
+.clr-vertical-nav .nav-link{
+    color: #EEE;
+    line-height: 2rem;
+    height: 2rem;
+}
+.clr-vertical-nav .nav-content>.nav-link {
+    flex: 0 0
+}
+.clr-vertical-nav .nav-trigger {
+    color: #FFF;
+}
+
+.clr-vertical-nav .nav-link:hover {
+    color: #FFF;
+    background-color: #00B94B;
+}
+
+/* search and header-actions */
+.header .search {
+    background-color: white;
+    opacity: 1;
+}
+
+.header .search label::before, .header .search-box label::before, header .search label::before, header .search-box label::before {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23000%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3ESearch%3C%2Ftitle%3E%3Cg%20id%3D%22icons%22%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M15%2C4.05A10.95%2C10.95%2C0%2C1%2C1%2C4.05%2C15%2C11%2C11%2C0%2C0%2C1%2C15%2C4.05M15%2C2A13%2C13%2C0%2C1%2C0%2C28%2C15%2C13%2C13%2C0%2C0%2C0%2C15%2C2Z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20%20d%3D%22M33.71%2C32.29l-7.37-7.42-1.42%2C1.41%2C7.37%2C7.42a1%2C1%2C0%2C1%2C0%2C1.42-1.41Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+
+.header-actions {
+    background-color: white;
+}
+
+.header .search input[type=text], .header .search-box input[type=text], header .search input[type=text], header .search-box input[type=text] {
+    color: #000;
+}
+
+.header-icon {
+    fill: #000;
+}
+
+/* typography */
+h1 {
+    color: #00A643;
+    font-weight: bold;
+}
+
+/* chat room */
+.message {
+    background-color:#ddd;
+    padding: .4rem;
+    width:200px;
+    margin-bottom: 10px;
+    border-radius:.7rem;
+    border-bottom-left-radius: .125rem;
+    font-size:.5rem;
+    float:left;
+}
+
+.me {
+    background-color:#00B94B;
+    color: white;
+    float:right;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .125rem;
+}
+
+.chat-profile-image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.chat-company-name {
+    font-size:.4rem;
+}
+
+.chat-name {
+    font-size: .4rem;
+}
+
+/* guage styling */
+
+mwl-gauge {
+    width: 150px;
+    height: 150px;
+    display: block;
+    padding: 10px;
+}
+mwl-gauge > .gauge > .dial {
+    stroke: #eee;
+    stroke-width: 2;
+    fill: rgba(0,0,0,0);
+}
+mwl-gauge > .gauge > .value {
+    stroke: rgb(47, 227, 255);
+    stroke-width: 2;
+    fill: rgba(0,0,0,0);
+}
+mwl-gauge > .gauge > .value-text {
+    fill: rgb(47, 227, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* sales quota */
+.sales-quota {
+    color: #00A643;
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+/* calendar styles override */
+.cal-month-view .cal-day-cell {
+    min-height: 10px;
+}
+.cal-month-view .cal-cell-top {
+    min-height: 10px;
+}
+
+.cal-month-view .cal-day-number {
+    font-size: inherit;
+    margin-top: .25rem;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+}
+
+/* Email styles */
+.email-unread {
+    color: blue;
+    font-weight: bold;
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
+.category {
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.email-image {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.black {
+    background-color: black;
+}
